@@ -12,6 +12,7 @@
 
 #include <gtest/gtest.h>
 #include <cmath>
+#include "Coordinates.hpp"
 
 TEST(Distance, dummyDistanceTestfromLodzToWarsaw)
 {
@@ -35,6 +36,12 @@ TEST(Distance, dummyDistanceTestfromLodzToWarsaw)
     double d = R * c;
 
     ASSERT_TRUE( 0.8 > fabs(d - 119.0));
+}
+
+TEST(Distance, dummyCoordinatesObject)
+{
+    Coordinates Lodz;
+    ASSERT_TRUE(true);
 }
 
 int main(int argc, char* argv[])
