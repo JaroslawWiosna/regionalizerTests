@@ -40,7 +40,9 @@ TEST(Distance, dummyDistanceTestfromLodzToWarsaw)
 
 TEST(Distance, dummyCoordinatesObject)
 {
-    Coordinates Lodz;
+    geo_location Lodz_lat{20,0,0,0};
+    geo_location Lodz_lon{20,0,0,0};
+    Coordinates Lodz{Lodz_lat,Lodz_lon};
     ASSERT_TRUE(true);
 }
 

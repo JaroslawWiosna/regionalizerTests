@@ -13,8 +13,8 @@ project(distance)
 
 file(GLOB src
   "*.cpp"
-  #  "../../Coordinates/Coordinates.cpp"
-  "Coordinates.cpp"
+  "../../Coordinates/Coordinates.cpp"
+  #"Coordinates.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${src} )
