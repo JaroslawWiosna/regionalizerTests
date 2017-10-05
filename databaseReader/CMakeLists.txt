@@ -9,12 +9,13 @@
 #  file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #
 
-project(distance)
+project(databaseReader)
 
 file(GLOB src
   "*.cpp"
-  "../../Coordinates/Coordinates.cpp"
-  #"Coordinates.cpp"
+  "../../DatabaseReader/DatabaseReader.cpp"
+  "../../VectorOfCities/VectorOfCities.cpp"
+  "../../City/City.cpp"
 )
 
 add_executable(${PROJECT_NAME} ${src} )
