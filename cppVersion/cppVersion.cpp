@@ -2,6 +2,7 @@
  * @file cppVersion.cpp
  *
  * @author Jaroslaw Wiosna
+ * @author Wojciech Mielczarek
  *
  * @par Licence
  * This Source Code Form is subject to the terms of the Mozilla Public
