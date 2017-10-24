@@ -10,20 +10,18 @@
  *
  */
 
-#include <gtest/gtest.h>
-#include <cmath>
 #include "DatabaseReader.hpp"
+#include <cmath>
+#include <gtest/gtest.h>
 
-TEST(DatabaseReader, dummyTest)
-{
+TEST(DatabaseReader, dummyTest) {
     std::string path = "../../../database/Poland-Cities010-Top10-mock.txt";
     auto vec = DatabaseReader::readCitiesFromFile(path);
 
     ASSERT_EQ(10, vec.size());
 }
 
-int main(int argc, char* argv[])
-{
+int main(int argc, char *argv[]) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
 }
