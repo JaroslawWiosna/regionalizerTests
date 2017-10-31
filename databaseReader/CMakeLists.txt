@@ -21,6 +21,8 @@ file(GLOB src
 
 add_executable(${PROJECT_NAME} ${src} )
 
+set(LINK_FLAGS "stdc++fs ${LINK_FLAGS}")
+
 target_link_libraries(
   ${PROJECT_NAME} 
   ${LINK_FLAGS}
